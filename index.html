@@ -23,6 +23,48 @@
 
         <h1>Formulário de Matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da Criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input id="fullname" name="fullname" type="text" placeholder="Informe o nome da criança">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" name="birth" id="birth" lang="pt-BR">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" name="gender" id="gender">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="NA">Não quero responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="Preencha neste campo, as orientações médicas necessários para a escola."></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" name="birth-file" id="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>Clique aqui para <br> selecionar os arquivos.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="child-address">
+            <legend>Endereço residencial</legend>
+
+
+          </fieldset>
+        </form>
       </div>
     </main>
 
