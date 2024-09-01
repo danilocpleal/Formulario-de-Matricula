@@ -72,12 +72,36 @@
             </div>
           </fieldset>
 
-          <fieldset class="child-address">
+          <fieldset class="address">
             <legend>Endereço residencial</legend>
 
             <div class="input-wrapper">
               <label for="cep">CEP</label>
               <input id="cep" name="cep" type="text" >
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="rua">Rua</label>
+                <input id="rua" name="rua" type="text" value="Rua das Flores" disabled>
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="numero">Número</label>
+                <input id="numero" name="numero" type="number">
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text" value="São Paulo" disabled>
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="uf">Estado</label>
+                <input id="uf" name="uf" type="text" value="SP" disabled>
+              </div>
             </div>
 
           </fieldset>
